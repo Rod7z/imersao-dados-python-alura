@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # --- Carregamento dos dados ---
-df = pd.read_csv("E:\Área de Trabalho\imersao-dados\dados.csv")
+df = pd.read_csv("dados.csv")
 
 # --- Barra Lateral (Filtros) ---
 st.sidebar.header("🔍 Filtros")
@@ -136,4 +136,5 @@ with col_graf4:
 # --- Tabela de Dados Detalhados ---
 st.subheader("Dados Detalhados")
 st.dataframe(df_filtrado)
+
      
